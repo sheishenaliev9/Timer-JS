@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Timer (Aidar)</title>
+</head>
+<body>
+    
+<div class="wrapper">
+    <div class="main-block">
+        <div class="container">
+            <div class="timerMin">
+                <input id="inputMinute" type="number" placeholder="Type Minute">
+            </div>
+            <div class="blockCounter">
+                <div class="counter">
+                        <span class="second">0</span>
+                        <audio id="notificationSound" src="/sounds/timer-bell.mp3"></audio>
+                        s
+                </div>
+            </div>
+
+            <div class="blockButtons">
+                <audio id="clickSound" src="/sounds/btn_click_sound.mp3"></audio>
+                <button id="startBtn" class="btn">Start</button>
+                <button id="stopBtn" class="btn">Stop</button>
+                <button id="resetBtn" class="btn">Reset</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
